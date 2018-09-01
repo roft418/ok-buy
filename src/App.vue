@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <Slider v-model="value" range></Slider>
   </div>
 </template>
 
@@ -27,3 +28,15 @@
   }
 }
 </style>
+
+
+<script>
+ export default{
+   name:"",
+   data(){
+     return{
+       value:[20,50]
+     }
+   }
+ }
+</script>
